@@ -12,4 +12,11 @@ public class TestUtils {
         }
         return ints;
     }
+    public static double[] changeDoubleArr(String[] strings){
+        double[] doubles = new double[strings.length];
+        for (int i = 0; i < doubles.length; i++) {
+            doubles[i] = Double.parseDouble(strings[i]);
+        }
+        return doubles;
+    }
 }
